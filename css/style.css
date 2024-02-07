@@ -1,0 +1,178 @@
+/* Reset  - Configuración básica de mis estilos*/
+* {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+/*header*/
+.header {
+  background-color: white;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.logo {
+  float: left;
+}
+/*Menu Header*/
+.menu {
+  float: center;
+}
+.menu ul {
+  background-color: #000000;
+}
+.menu li {
+  list-style: none; /*elimina estilos por defecto*/
+  display: inline-block; /*hace los items del menu estén en una linea horizontal*/
+  margin-right: 1em;
+}
+.menu li a {
+  color: #f5f5f5;
+  text-decoration: none; /*quita underline*/
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.menu li a:hover {
+  color: #f2dd6e;
+  font-weight: bold;
+}
+/*main*/
+
+.sectionHome {
+  margin: 50px;
+}
+.fotoHome {
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+.textoHome {
+  text-align: center;
+  width: 75%;
+  margin: 4em auto;
+  text-align: justify;
+}
+.textoHome h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.button {
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+}
+.tarjeta {
+  margin: 5em;
+  overflow: hidden;
+}
+
+.parrafoTarjeta,
+.fotoTarjeta {
+  display: inline-block;
+  width: 40%;
+  margin: 1em;
+  overflow: hidden;
+}
+.parrafoTarjeta {
+  text-align: justify;
+  padding: 20px;
+}
+.fotoTarjeta {
+  height: auto;
+  float: left;
+}
+/*Grid de bicicletas*/
+.grid {
+  margin: 5em auto;
+  overflow: hidden;
+}
+.imagenGrid {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin: 10px;
+}
+
+.textoProducto {
+  font-size: 1.5em;
+  text-align: center;
+  width: 60%;
+  margin: 4em auto;
+  text-align: justify;
+}
+.textoProducto h2 {
+  text-align: center;
+}
+
+/*Formulario*/
+
+.tituloForm {
+  text-align: left;
+  margin-left: 4rem;
+}
+.formulario {
+  padding: 2em;
+  text-align: center;
+  width: 80% auto;
+  background-color: #f2dd6e;
+}
+form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+form input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 1em;
+  /*  border: 5px solid red; */
+}
+
+form textarea {
+  width: 80%;
+  height: 200px;
+  padding: 12px 20px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #f2dd6e;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/*Menu en footer*/
+
+.menuFooter {
+  float: left;
+}
+
+.menuFooter li {
+  list-style: none; /*elimina estilos por defecto*/
+  display: inline-block; /*hace los items del menu estén en una linea horizontal*/
+  margin-right: 1em;
+}
+.menuFooter li a {
+  color: #000000;
+  text-decoration: none; /*quita underline*/
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.menuFooter li a:hover {
+  color: #333333;
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*iconos RRSS footer*/
+.rrss {
+  float: right;
+}
+.rrss i {
+  margin: 0.5em;
+}
