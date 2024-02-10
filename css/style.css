@@ -37,6 +37,7 @@
   color: #f2dd6e;
   font-weight: bold;
 }
+
 /*main*/
 
 .sectionHome {
@@ -85,6 +86,7 @@
   height: auto;
   float: left;
 }
+
 /*Grid de bicicletas*/
 .grid {
   margin: 5em auto;
