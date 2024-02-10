@@ -37,7 +37,6 @@
   color: #f2dd6e;
   font-weight: bold;
 }
-
 /*main*/
 
 .sectionHome {
@@ -47,6 +46,14 @@
   text-align: center;
   height: auto;
   width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fotoHome > img {
+  max-width: 90%;
+  /*   align-self: center;
+  justify-self: center; */
 }
 
 .textoHome {
@@ -86,7 +93,6 @@
   height: auto;
   float: left;
 }
-
 /*Grid de bicicletas*/
 .grid {
   margin: 5em auto;
