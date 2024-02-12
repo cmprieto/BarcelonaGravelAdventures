@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barcelona Gravel Adventures</title>
-    <!-- iconos rrss footer-->
-    <script
-      src="https://kit.fontawesome.com/aae8bf3085.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--  importar CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barcelona Gravel Adventures</title>
+
+  <!--Bootstrap-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- iconos rrss footer-->
+  <script src="https://kit.fontawesome.com/aae8bf3085.js" crossorigin="anonymous"></script>
+  <!--  importar CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <div class="grid-container">
     <header class="header">
-      <div class="logo">
-        <img src="../assets/logo.png" alt="logo web" />
-      </div>
-      <nav class="menu">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./servicio.html">Servicio</a></li>
-          <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="./productos.html">Productos</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+      <!-- NAV de BOOTSTRAP-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid cabeceraContenedor">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo web" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse menu" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 cabecera">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./servicio.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
       </nav>
+
     </header>
-    <main>
+    <main class="contenido-principal">
       <h1 class="titulo">SERVICIOS</h1>
       <section class="tarjeta">
         <img src="../assets/tienda.png" alt="tienda" class="fotoTarjeta" />
         <article class="parrafoTarjeta">
           <h2>NUESTRA TIENDA</h2>
           <p>
-            Explora el mundo del ciclismo en Barcelona Gravel Adventures, donde
-            la velocidad se encuentra con la aventura. Descubre nuestra
-            selección premium de bicicletas de gravel, diseñadas para conquistar
-            cualquier terreno. Con estilo, rendimiento y calidad, en Barcelona
-            Bike Adventures te invitamos a rodar hacia nuevas emociones en cada
+            Explora el mundo del ciclismo en <em>Barcelona Gravel Adventures</em>, donde la velocidad se encuentra con
+            la
+            aventura. </p>
+          <p>Descubre nuestra selección premium de bicicletas de gravel, diseñadas para conquistar cualquier terreno.
+          </p>
+          <p> Con estilo, rendimiento y calidad, en <em>Barcelona Bike Adventures </em>te invitamos a rodar hacia nuevas
+            emociones
+            en cada
             pedaleo.
           </p>
         </article>
       </section>
       <section class="tarjeta">
-        <img
-          src="../assets/ciclista_1200.png"
-          alt="ciclista"
-          class="fotoTarjeta"
-        />
+        <img src="../assets/ciclista_1200.png" alt="ciclista" class="fotoTarjeta" />
         <article class="parrafoTarjeta">
           <h2>SALIDAS CICLISTAS</h2>
           <p>
-            Únete a nuestra comunidad de entusiastas del ciclismo y participa en
-            emocionantes salidas de fin de semana en grupos ciclistas. Comparte
-            experiencias, descubre nuevas rutas y forma parte de una red de
-            apasionados por el ciclismo que comparten el mismo amor por la
-            aventura gravel.
-          </p>
+            Únete a nuestra comunidad de entusiastas del ciclismo y participa en emocionantes salidas de fin de semana
+            en grupos ciclistas. </p>
+          <p>Comparte experiencias, descubre nuevas rutas y forma parte de una red de apasionados por el ciclismo que
+            comparten el mismo amor por la aventura gravel.</p>
         </article>
       </section>
     </main>
@@ -72,10 +94,22 @@
         </ul>
       </nav>
       <div class="rrss">
-        <i class="fa-brands fa-facebook" style="font-size: 2rem"></i>
-        <i class="fa-brands fa-instagram" style="font-size: 2rem"></i>
-        <i class="fa-brands fa-tiktok" style="font-size: 2rem"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
       </div>
     </footer>
-  </body>
+  </div>
+  <!--BS SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

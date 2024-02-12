@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Barcelona Gravel Adventures</title>
 
+  <!--Bootstrap-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
   <!-- iconos rrss footer-->
   <script src="https://kit.fontawesome.com/aae8bf3085.js" crossorigin="anonymous"></script>
 
@@ -21,76 +28,108 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="./assets/logo.png" alt="logo web" />
-    </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/servicio.html">Servicios</a></li>
-        <li><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="sectionHome">
-      <h1 class="titulo">¡Bienvenido a "Barcelona Gravel Adventures"!</h1>
-      <br />
-      <section class="fotoHome">
-        <img src="./assets/banner.png" alt="img home" />
-      </section>
-      <section class="textoHome">
-        <h2>
-          Explora la ciudad de Barcelona y sus encantadores alrededores sobre
-          ruedas con nosotros.
-        </h2>
-        <p>
-          En nuestra <b>tienda online</b>, encontrarás una amplia selección de
-          bicicletas de alta calidad para todos los gustos y niveles. Desde
-          bicicletas de montaña diseñadas para las rutas más desafiantes hasta
-          elegantes bicicletas urbanas perfectas para paseos relajados por la
-          ciudad, tenemos el compañero perfecto para tu aventura en dos
-          ruedas. Sumérgete en la cultura ciclista de Barcelona participando
-          en nuestras emocionantes salidas organizadas los fines de semana.
-          Nuestros guías expertos te llevarán a través de pintorescos
-          paisajes, antiguos caminos y maravillosas rutas costeras. Descubre
-          lugares secretos y disfruta de vistas impresionantes mientras
-          pedaleas en compañía de otros entusiastas de la bicicleta. Además,
-          nuestras salidas están diseñadas para adaptarse a diferentes niveles
-          de habilidad, desde principiantes hasta ciclistas experimentados. En
-          "Barcelona Bike Adventures", no solo vendemos bicicletas, sino que
-          también creamos experiencias inolvidables. Únete a nuestra comunidad
-          ciclista, conoce a nuevos amigos y vive la emoción de explorar
-          Barcelona y sus alrededores de una manera única. ¡Prepárate para
-          pedalear hacia nuevas aventuras y descubrimientos con nosotros!
-          ¡Encuentra la bicicleta perfecta y reserva tu próxima salida en
-          bicicleta ahora!
-        </p>
-        <div class="button">
-          <button type="button">Entra al Gravel</button>
+  <div class="grid-container">
+    <header class="header">
+      <!-- NAV de BOOTSTRAP-->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid cabeceraContenedor">
+          <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" alt="logo web" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse menu" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 cabecera">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/servicio.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+          </div>
         </div>
+      </nav>
+
+    </header>
+    <main class="contenido-principal">
+      <section>
+        <h1 class="titulo">¡Bienvenido a "Barcelona Gravel Adventures"!</h1>
+        <br />
+        <section class="fotoHome">
+          <img src="./assets/banner.png" alt="img home" />
+        </section>
+        <section class="sectionHome">
+          <h2>
+            Explora la ciudad de Barcelona y sus encantadores alrededores con nosotros.
+          </h2>
+          <br>
+          <p class="parrafoHome">
+            En nuestra <b>tienda online</b>, encontrarás una amplia selección de
+            bicicletas de alta calidad para todos los gustos y niveles. Desde
+            bicicletas de montaña diseñadas para las rutas más desafiantes hasta
+            elegantes bicicletas urbanas perfectas para paseos relajados por la
+            ciudad, tenemos el compañero perfecto para tu aventura en dos
+            ruedas. </p>
+          <p class="parrafoHome">Sumérgete en la cultura ciclista de Barcelona participando
+            en nuestras emocionantes salidas organizadas los fines de semana.
+            Nuestros guías expertos te llevarán a través de pintorescos
+            paisajes, antiguos caminos y maravillosas rutas costeras. Descubre
+            lugares secretos y disfruta de vistas impresionantes mientras
+            pedaleas en compañía de otros entusiastas de la bicicleta. Además,
+            nuestras salidas están diseñadas para adaptarse a diferentes niveles
+            de habilidad, desde principiantes hasta ciclistas experimentados.
+          <p class="parrafoHome">En "Barcelona Bike Adventures", no solo vendemos bicicletas, sino que
+            también creamos experiencias inolvidables. Únete a nuestra comunidad
+            ciclista, conoce a nuevos amigos y vive la emoción de explorar
+            Barcelona y sus alrededores de una manera única. ¡Prepárate para
+            pedalear hacia nuevas aventuras y descubrimientos con nosotros!
+            ¡Encuentra la bicicleta perfecta y reserva tu próxima salida en
+            bicicleta ahora!
+          </p>
+          <div class="button">
+            <button type="button" class="btn boton">Entra en el mundo Gravel</button>
+          </div>
+        </section>
       </section>
-    </section>
-  </main>
-  <footer class="footer">
-    <nav class="menuFooter">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/servicio.html">Servicios</a></li>
-        <li><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <div class="rrss">
-      <i class="fa-brands fa-facebook" style="font-size: 2rem"></i>
-      <i class="fa-brands fa-instagram" style="font-size: 2rem"></i>
-      <i class="fa-brands fa-tiktok" style="font-size: 2rem"></i>
-    </div>
-  </footer>
+    </main>
+    <footer class="footer">
+      <nav class="menuFooter">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/servicio.html">Servicios</a></li>
+          <li><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="./pages/productos.html">Productos</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="rrss">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </footer>
+  </div>
+  <!--BS SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -5,6 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Barcelona Gravel Adventures</title>
+
+  <!--Bootstrap-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
   <!-- iconos rrss footer-->
   <script src="https://kit.fontawesome.com/aae8bf3085.js" crossorigin="anonymous"></script>
   <!--  importar CSS -->
@@ -12,70 +20,116 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="../assets/logo.png" alt="logo web" />
-    </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./servicio.html">Servicio</a></li>
-        <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1 class="tituloForm">FORMULARIO DE CONTACTO</h1>
-    <section class="formulario">
-      <form action="#" method="GET">
-        <label for="name">nombre:</label><br />
-        <input type="text" id="name" name="name" value="nombre" /><br />
+  <div class="grid-container">
+    <header class="header">
+      <!-- NAV de BOOTSTRAP-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid cabeceraContenedor">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo web" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse menu" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 cabecera">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicio.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
 
-        <label for="email">email</label><br />
-        <input type="email" id="email" name="email" value="email" /><br />
+          </div>
+        </div>
+      </nav>
 
-        <label for="phone">teléfono:</label><br />
-        <input type="tel" id="phone" name="phone" placeholder="teléfono" /><br />
-        <p><b>tu mensaje:</b></p>
-        <textarea id="mensaje" name="mensaje" placeholder="escribe tu mensaje..."></textarea><br />
-        <input type="submit" value="ENVIAR" />
-      </form>
-    </section>
-    <section class="tarjeta">
-      <img src="../assets/mapa.png" alt="mapa" class="fotoTarjeta" />
-      <article>
-        <p class="parrafoTarjeta">
-          ¡Embárcate en la aventura del ciclismo de gravel con nosotros!
-          Descubre la libertad, conquista nuevos caminos. Completa nuestro
-          formulario de contacto y haz realidad tu próxima gran travesía sobre
-          dos ruedas. <br />
-          ¡Estamos ansiosos por ser parte de tu emocionante historia
-          ciclista!<br />
-          <b>Nos encontrarás en nuestra tienda en el centro de Barcelona, en
-            la calle Consell de Cent 323.
-          </b>
-        </p>
-      </article>
-    </section>
-  </main>
-  <footer class="footer">
-    <nav class="menuFooter">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./servicio.html">Servicio</a></li>
-        <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <div class="rrss">
-      <i class="fa-brands fa-facebook" style="font-size: 2rem"></i>
-      <i class="fa-brands fa-instagram" style="font-size: 2rem"></i>
-      <i class="fa-brands fa-tiktok" style="font-size: 2rem"></i>
-    </div>
-  </footer>
+    </header>
+
+    <main class="contenido-principal">
+
+      <section class="container">
+        <form class="form-floating">
+          <div class="form-floating col-auto mb-3">
+            <input type="name" class="form-control form-carlos" id="floatingName" placeholder="nombre">
+            <label for="floatingName">tu nombre</label>
+          </div>
+
+          <div class="form-floating col-auto mb-3">
+            <input type="email" class="form-control form-carlos" id="floatingMail" placeholder="name@example.com"
+              value="name@example.com">
+            <label for="floatingMail">email address</label>
+          </div>
+          <div class="form-floating col-auto mb-3">
+            <input type="tel" class="form-control form-carlos" id="floatingPhone" placeholder="phone">
+            <label for="floatingPhone">teléfono</label>
+          </div>
+
+          <div class="form-floating col-auto mb-3">
+            <textarea class="form-control form-carlos" placeholder="Leave a comment here" id="floatingTextarea"
+              style="height: 200px;"></textarea>
+            <label for="floatingTextarea">escribe tu mensaje...</label>
+          </div>
+
+          <button type="submit" class="btn boton">enviar</button>
+        </form>
+      </section>
+
+      <section class="tarjeta">
+        <img src="../assets/mapa.png" alt="mapa" class="fotoTarjeta" />
+        <article class="parrafoTarjeta">
+          <p>¡Embárcate en la aventura del ciclismo de gravel con nosotros!
+            Descubre la libertad, conquista nuevos caminos. </p>
+          <p>Completa nuestro
+            formulario de contacto y haz realidad tu próxima gran travesía sobre
+            dos ruedas.</p>
+          <p>¡Estamos ansiosos por ser parte de tu emocionante historia
+            ciclista!</p>
+          <p><b>Nos encontrarás en nuestra tienda en el centro de Barcelona, en
+              la calle Consell de Cent 323.
+            </b></p>
+        </article>
+      </section>
+
+
+    </main>
+    <footer class="footer">
+      <nav class="menuFooter">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./servicio.html">Servicio</a></li>
+          <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="rrss">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </footer>
+  </div>
+
+  <!--BS SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
