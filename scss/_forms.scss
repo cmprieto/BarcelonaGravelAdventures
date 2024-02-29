@@ -1,0 +1,10 @@
+/*Formulario Bootstrap personalizado*/
+.form-carlos {
+    background-color: #e7e4e7;
+    &:focus {
+            box-shadow: 3px 3px 3px 3px $color-coolyellow;
+            border-color: $color-coolyellow;
+        }
+
+}
+

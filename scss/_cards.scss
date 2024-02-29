@@ -1,0 +1,28 @@
+/*CARDS*/
+
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+            background-color: $color-cardhover;
+        }
+}
+
+
+.parrafoTarjeta {
+    margin: 1em;
+    max-width: 600px;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.5rem;
+}
+
+.fotoTarjeta {
+    margin: 1em;
+    max-width: 45%;
+    &:hover {
+            opacity: 0.8;
+        }
+}
+

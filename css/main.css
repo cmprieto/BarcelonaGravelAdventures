@@ -1,38 +1,20 @@
+@charset "UTF-8";
 /* Reset  - Configuración básica de mis estilos*/
 * {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   color: #333333;
 }
+
 /*CSS GRID*/
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.3fr 0.3fr 2fr 1fr 0.3fr;
-  grid-template-areas:
-    "header header"
-    "contenido-principal contenido-principal"
-    "contenido-principal contenido-principal"
-    "contenido-principal contenido-principal"
-    "footer footer";
+  grid-template-areas: "header header" "contenido-principal contenido-principal" "contenido-principal contenido-principal" "contenido-principal contenido-principal" "footer footer";
   min-height: 100vh;
   overflow: hidden;
   background-color: #f4f7f5;
-}
-
-.contenido-principal {
-  grid-area: contenido-principal;
-  margin-top: 3rem;
-  grid-row: 2/5;
-  grid-column: 1/3;
-}
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 0.5;
-  grid-area: footer;
-  grid-row: 5/6;
-  grid-column: 1/3;
-  background-color: #f2dd6e;
 }
 
 /*HEADER*/
@@ -49,7 +31,7 @@
   font-weight: bolder;
 }
 .cabecera li a {
-  color: #a7a2a9;
+  color: #040D12;
   font-weight: lighter;
   font-size: 1rem;
   text-transform: uppercase;
@@ -59,12 +41,19 @@
 }
 
 /*HOME*/
+.contenido-principal {
+  grid-area: contenido-principal;
+  margin-top: 3rem;
+  grid-row: 2/5;
+  grid-column: 1/3;
+}
 
 .titulo {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
 .fotoHome {
   text-align: center;
   height: auto;
@@ -82,11 +71,6 @@
   margin: 1.5rem auto;
   padding: 2rem;
 }
-
-.parrafoHome {
-  text-align: justify;
-}
-
 .sectionHome h2 {
   background-color: #e7e4e7;
   border-radius: 5px;
@@ -98,40 +82,41 @@
   padding: 2rem;
 }
 
+.parrafoHome {
+  text-align: justify;
+}
+
 .boton {
   background-color: #016fb9;
   text-align: center;
   color: white;
 }
-
 .boton:hover {
   background-color: #f2dd6e;
   color: black;
   font-weight: bold;
 }
 
-/*main otras paginas*/
-
+/*CARDS*/
 .tarjeta {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .tarjeta:hover {
-  background-color: #ccc7c14d;
+  background-color: rgba(204, 199, 193, 0.3019607843);
 }
 
-.parrafoTarjeta,
-.fotoTarjeta {
-  margin: 1em;
-}
 .parrafoTarjeta {
+  margin: 1em;
   max-width: 600px;
   text-align: justify;
   padding: 20px;
   line-height: 1.5rem;
 }
+
 .fotoTarjeta {
+  margin: 1em;
   max-width: 45%;
 }
 .fotoTarjeta:hover {
@@ -139,7 +124,6 @@
 }
 
 /*PRODUCTOS*/
-
 .bicicletas {
   display: flex;
   justify-content: center;
@@ -180,34 +164,48 @@
 }
 
 /*FOOTER*/
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 0.5;
+  grid-area: footer;
+  grid-row: 5/6;
+  grid-column: 1/3;
+  background-color: #f2dd6e;
+}
+
 .menuFooter {
   grid-column: 1/2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .menuFooter ul {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
 }
-.menuFooter li {
-  list-style: none; /*elimina estilos por defecto*/
+.menuFooter ul li {
+  list-style: none;
+  /*elimina estilos por defecto*/
   margin: 1rem;
 }
-.menuFooter li a {
-  color: #000000;
-  text-decoration: none; /*quita underline*/
-  font-size: 0.8em;
+.menuFooter ul li a {
+  color: #040D12;
+  text-decoration: none;
+  /*quita underline*/
+  font-size: 0.9em;
   text-transform: uppercase;
 }
-
-.menuFooter li a:hover {
+.menuFooter ul li a:hover {
   color: #333333;
   font-weight: bold;
 }
+
+.activo {
+  font-weight: bold;
+}
+
 /*iconos RRSS footer*/
 .rrss {
   grid-column: 2/3;
@@ -222,10 +220,7 @@
   opacity: 0.5;
 }
 
-/*MEDIA QUERIES*/
-
 /*TABLET*/
-
 @media only screen and (min-width: 501px) and (max-width: 960px) {
   /*HOME*/
   .sectionHome {
@@ -245,7 +240,6 @@
     max-width: 85%;
     padding: 0;
   }
-
   .titulo {
     font-size: 1.6rem;
     margin-bottom: 1rem;
@@ -256,19 +250,16 @@
     width: 80%;
     padding: 1em;
   }
-
   /*MENU FOOTER*/
   .menuFooter ul {
     flex-direction: column;
   }
-  .menuFooter li {
+  .menuFooter ul li {
     font-size: 0.9rem;
     margin: 0.8rem;
   }
 }
-
 /*MOVIL*/
-
 @media only screen and (max-width: 500px) {
   /*HOME*/
   .sectionHome {
@@ -278,7 +269,6 @@
     font-size: 0.8rem;
     font-weight: 600;
   }
-
   .tarjeta {
     flex-direction: column;
   }
@@ -293,7 +283,6 @@
     font-size: 1.2rem;
     font-weight: 600;
   }
-
   .bicicletas {
     flex-direction: column;
   }
@@ -304,7 +293,6 @@
     border-radius: 5px;
     background-color: white;
   }
-
   .titulo {
     font-size: 1.6rem;
   }
@@ -313,15 +301,11 @@
     width: 100%;
     padding: 1em;
   }
-
   /* FOOTER*/
   .menuFooter ul {
     flex-direction: column;
   }
-  .rrss i {
-    font-size: 1.5rem;
-  }
-  .menuFooter li {
+  .menuFooter ul li {
     font-size: 0.9rem;
     margin: 0.8rem;
   }
@@ -330,4 +314,9 @@
     justify-self: center;
     height: 70%;
   }
+  .rrss i {
+    font-size: 1.5rem;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */

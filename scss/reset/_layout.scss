@@ -1,0 +1,15 @@
+/*CSS GRID*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 2fr 1fr 0.3fr;
+    grid-template-areas:
+        "header header"
+        "contenido-principal contenido-principal"
+        "contenido-principal contenido-principal"
+        "contenido-principal contenido-principal"
+        "footer footer";
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: $color-background;
+}
