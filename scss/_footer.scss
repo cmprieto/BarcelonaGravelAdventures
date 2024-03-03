@@ -17,8 +17,8 @@
     ul {
         display: flex;
         flex-direction: row;
-        margin: 0;
-        padding: 0;
+        @include boxBorder(0,0);
+  
             li {
                 list-style: none;
                 /*elimina estilos por defecto*/
@@ -52,10 +52,16 @@
     align-self: center;
     display: flex;
     justify-content: space-evenly;
-    i {
-       font-size: 2rem;
-       &:hover {
-            opacity: 0.5;
-            }
-        }
 }
+
+//uso del each -> recorre el map declarado en _vars.scss
+
+@each $redes, $color in $redes-sociales{
+    .fa-#{$redes}{
+        font-size: 2rem;
+        &:hover{
+            box-shadow:5px 5px 5px $color;
+ 
+        }
+    }
+} 

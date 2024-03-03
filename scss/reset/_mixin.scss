@@ -1,4 +1,11 @@
+@mixin boxBorder($marg, $padd) {
+    margin: $marg;
+    padding: $padd;
+}
+
+
 @mixin sizes($ancho,$alto){
     height:$ancho;
     width:$alto;
 }
+

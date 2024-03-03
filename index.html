@@ -11,8 +11,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-
-
   <!-- iconos rrss footer-->
   <script src="https://kit.fontawesome.com/aae8bf3085.js" crossorigin="anonymous"></script>
 
@@ -22,9 +20,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,700&display=swap"
     rel="stylesheet" />
 
+  <!--  importar animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!--  importar aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!--  importar CSS -->
   <link rel="stylesheet" href="./css/main.css" />
+
 </head>
 
 <body>
@@ -33,7 +37,7 @@
       <!-- NAV de BOOTSTRAP-->
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid cabeceraContenedor">
-          <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" alt="logo web" /></a>
+          <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" alt="logo web" class="logoweb" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,19 +73,19 @@
         <section class="fotoHome">
           <img src="./assets/banner.png" alt="img home" />
         </section>
-        <section class="sectionHome">
+        <section class="sectionHome animate__animated animate__pulse">
           <h2>
             Explora la ciudad de Barcelona y sus encantadores alrededores con nosotros.
           </h2>
           <br>
-          <p class="parrafoHome">
+          <p class="parrafoHome" data-aos="fade-up">
             En nuestra <b>tienda online</b>, encontrarás una amplia selección de
             bicicletas de alta calidad para todos los gustos y niveles. Desde
             bicicletas de montaña diseñadas para las rutas más desafiantes hasta
             elegantes bicicletas urbanas perfectas para paseos relajados por la
             ciudad, tenemos el compañero perfecto para tu aventura en dos
             ruedas. </p>
-          <p class="parrafoHome">Sumérgete en la cultura ciclista de Barcelona participando
+          <p class="parrafoHome" data-aos="fade-up">Sumérgete en la cultura ciclista de Barcelona participando
             en nuestras emocionantes salidas organizadas los fines de semana.
             Nuestros guías expertos te llevarán a través de pintorescos
             paisajes, antiguos caminos y maravillosas rutas costeras. Descubre
@@ -89,7 +93,8 @@
             pedaleas en compañía de otros entusiastas de la bicicleta. Además,
             nuestras salidas están diseñadas para adaptarse a diferentes niveles
             de habilidad, desde principiantes hasta ciclistas experimentados.
-          <p class="parrafoHome">En "Barcelona Bike Adventures", no solo vendemos bicicletas, sino que
+          <p class="parrafoHome" data-aos="fade-up">En "Barcelona Bike Adventures", no solo vendemos bicicletas, sino
+            que
             también creamos experiencias inolvidables. Únete a nuestra comunidad
             ciclista, conoce a nuevos amigos y vive la emoción de explorar
             Barcelona y sus alrededores de una manera única. ¡Prepárate para
@@ -97,8 +102,8 @@
             ¡Encuentra la bicicleta perfecta y reserva tu próxima salida en
             bicicleta ahora!
           </p>
-          <div class="button">
-            <button type="button" class="btn boton">Entra en el mundo Gravel</button>
+          <div class="buttonHome">
+            <a href="./pages/productos.html" role="button" class="btn boton">Entra en el mundo Gravel</a>
           </div>
         </section>
       </section>
@@ -130,6 +135,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
+
+
+  <!--AOS SCRIPT-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

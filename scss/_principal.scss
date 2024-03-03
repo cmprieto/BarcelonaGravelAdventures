@@ -1,61 +1,68 @@
 /*HOME*/
 
 .contenido-principal {
-    grid-area: contenido-principal;
-    margin-top: 3rem;
-    grid-row: 2/5;
-    grid-column: 1/3;
+  grid-area: contenido-principal;
+  margin-top: 3rem;
+  grid-row: 2/5;
+  grid-column: 1/3;
 }
 
-
 .titulo {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  animation-name: tracking-in-expand;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-direction: both;
 }
 
 .fotoHome {
-    text-align: center;
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    >img {
-            min-width: 100vw;
-        }
+  text-align: center;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > img {
+    min-width: 100vw;
+    border-radius: 15px;
+  }
 }
 
 .sectionHome {
-    width: 75%;
-    margin: 1.5rem auto;
+  width: 75%;
+  @include boxBorder(1.5rem auto, 2rem);
+
+  h2 {
+    background-color: #e7e4e7;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
     padding: 2rem;
-    h2 {
-            background-color: #e7e4e7;
-            border-radius: 5px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            text-align: center;
-            text-transform: uppercase;
-            margin-top: 1rem;
-            padding: 2rem;
-        }
+  }
 }
 
 .parrafoHome {
-    text-align: justify;
+  text-align: justify;
 }
 
-
+.buttonHome {
+  text-align: center;
+}
 
 .boton {
-    background-color: #016fb9;
-    text-align: center;
-    color: white;
-    &:hover {
-            background-color: $color-coolyellow;
-            color: black;
-            font-weight: bold;
-        }
+  background-color: #016fb9;
+  color: white;
+  box-shadow: 10px 10px 72px 1px rgba(140, 140, 140, 0.75);
+  &:hover {
+    animation-name: botonhome;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 }
-

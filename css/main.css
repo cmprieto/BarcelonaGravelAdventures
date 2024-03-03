@@ -6,6 +6,63 @@
   color: #333333;
 }
 
+@keyframes bicis {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+@keyframes bicisHover {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+@keyframes botonhome {
+  0% {
+    background-color: #016fb9;
+    transform: scale(1);
+    border: 1px solid #f2dd6e;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    background-color: #f2dd6e;
+    color: black;
+    font-weight: bold;
+  }
+}
+@keyframes cmBg {
+  from {
+    background-color: whitesmoke;
+  }
+  to {
+    background: linear-gradient(270deg, rgba(204, 199, 193, 0.3019607843) 0%, #f4f7f5 100%);
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*CSS GRID*/
 .grid-container {
   display: grid;
@@ -27,17 +84,26 @@
   grid-row: 1/2;
 }
 
+.cabeceraContenedor a img {
+  height: none;
+  width: 14rem;
+}
+
 .cabecera {
   font-weight: bolder;
 }
 .cabecera li a {
-  color: #040D12;
+  color: #040d12;
   font-weight: lighter;
   font-size: 1rem;
   text-transform: uppercase;
 }
 .cabecera li a:hover {
   font-weight: bold;
+}
+
+.logoweb {
+  filter: drop-shadow(0px 5px 15px #f4f7f5);
 }
 
 /*HOME*/
@@ -52,6 +118,10 @@
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
+  animation-name: tracking-in-expand;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-direction: both;
 }
 
 .fotoHome {
@@ -64,6 +134,7 @@
 }
 .fotoHome > img {
   min-width: 100vw;
+  border-radius: 15px;
 }
 
 .sectionHome {
@@ -86,15 +157,21 @@
   text-align: justify;
 }
 
+.buttonHome {
+  text-align: center;
+}
+
 .boton {
   background-color: #016fb9;
-  text-align: center;
   color: white;
+  box-shadow: 10px 10px 72px 1px rgba(140, 140, 140, 0.75);
 }
 .boton:hover {
-  background-color: #f2dd6e;
-  color: black;
-  font-weight: bold;
+  animation-name: botonhome;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 /*CARDS*/
@@ -104,14 +181,18 @@
   align-items: center;
 }
 .tarjeta:hover {
-  background-color: rgba(204, 199, 193, 0.3019607843);
+  animation-name: cmBg;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 
 .parrafoTarjeta {
   margin: 1em;
+  padding: 20px;
   max-width: 600px;
   text-align: justify;
-  padding: 20px;
   line-height: 1.5rem;
 }
 
@@ -134,24 +215,37 @@
 .imagenGrid {
   width: 25%;
   margin: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0.5rem;
   border-radius: 10px;
   background-color: white;
+  animation-name: bicis;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .imagenGrid:hover {
+  animation-name: bicisHover;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  /* 
   opacity: 0.7;
+  transform: scale(1.1); */
 }
 
 .textoProducto {
   font-size: 1.5em;
-  text-align: center;
-  width: 60%;
-  margin: 3em auto;
   text-align: justify;
+  width: 60%;
+  margin: 2em auto;
+  /* text-align: justify; */
 }
 .textoProducto h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 /*Formulario Bootstrap personalizado*/
@@ -191,7 +285,7 @@
   margin: 1rem;
 }
 .menuFooter ul li a {
-  color: #040D12;
+  color: #040d12;
   text-decoration: none;
   /*quita underline*/
   font-size: 0.9em;
@@ -213,11 +307,26 @@
   display: flex;
   justify-content: space-evenly;
 }
-.rrss i {
+
+.fa-facebook {
   font-size: 2rem;
 }
-.rrss i:hover {
-  opacity: 0.5;
+.fa-facebook:hover {
+  box-shadow: 5px 5px 5px #016fb9;
+}
+
+.fa-instagram {
+  font-size: 2rem;
+}
+.fa-instagram:hover {
+  box-shadow: 5px 5px 5px #ff5571;
+}
+
+.fa-tiktok {
+  font-size: 2rem;
+}
+.fa-tiktok:hover {
+  box-shadow: 5px 5px 5px black;
 }
 
 /*TABLET*/

@@ -1,28 +1,29 @@
 /*CARDS*/
 
 .tarjeta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-            background-color: $color-cardhover;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    animation-name: cmBg;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
 }
 
-
 .parrafoTarjeta {
-    margin: 1em;
-    max-width: 600px;
-    text-align: justify;
-    padding: 20px;
-    line-height: 1.5rem;
+  @include boxBorder(1em, 20px);
+  max-width: 600px;
+  text-align: justify;
+  line-height: 1.5rem;
 }
 
 .fotoTarjeta {
-    margin: 1em;
-    max-width: 45%;
-    &:hover {
-            opacity: 0.8;
-        }
+  margin: 1em;
+  max-width: 45%;
+  &:hover {
+    opacity: 0.8;
+  }
 }
-
