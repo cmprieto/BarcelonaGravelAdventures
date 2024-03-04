@@ -1,71 +1,81 @@
 /*MOVIL*/
 
 @media only screen and (max-width: 500px) {
-
-    /*HOME*/
-    .sectionHome {
-        width: 100%;
-            >h2 {
-                    font-size: 0.8rem;
-                    font-weight: 600;
-                }
+  .cabeceraContenedor {
+    a {
+      img {
+        @include sizes(none, 11rem);
+      }
     }
+  }
 
-    .tarjeta {
-        flex-direction: column;
+  /*HOME*/
+  .sectionHome {
+    width: 100%;
+    > h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
     }
-
-    .fotoTarjeta {
-        max-width: 100%;
+  }
+  .fotoHome {
+    > img {
+      border-radius: 2px;
     }
+  }
 
-    .parrafoTarjeta {
-        max-width: 90%;
-        padding: 0;
-        h2 {
-                font-size: 1.2rem;
-                font-weight: 600;
-            }
+  .tarjeta {
+    flex-direction: column;
+  }
+
+  .fotoTarjeta {
+    max-width: 100%;
+  }
+
+  .parrafoTarjeta {
+    max-width: 90%;
+    padding: 0;
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
     }
+  }
 
-    .bicicletas {
-        flex-direction: column;
+  .bicicletas {
+    flex-direction: column;
+  }
+
+  .imagenGrid {
+    width: 90%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  /*PRODUCTO*/
+  .textoProducto {
+    width: 100%;
+    padding: 1em;
+  }
+
+  /* FOOTER*/
+  .menuFooter ul {
+    flex-direction: column;
+    li {
+      font-size: 0.9rem;
+      margin: 0.8rem;
     }
+  }
 
-    .imagenGrid {
-        width: 90%;
-        margin: 5px;
-        border: 1px solid black;
-        border-radius: 5px;
-        background-color: white;
+  .rrss {
+    flex-direction: column;
+    justify-self: center;
+    height: 70%;
+    i {
+      font-size: 1.5rem;
     }
-
-    .titulo {
-        font-size: 1.6rem;
-    }
-
-    /*PRODUCTO*/
-    .textoProducto {
-        width: 100%;
-        padding: 1em;
-    }
-
-    /* FOOTER*/
-    .menuFooter ul {
-        flex-direction: column;
-            li {
-                    font-size: 0.9rem;
-                    margin: 0.8rem;
-                }
-    }
-
-
-    .rrss {
-        flex-direction: column;
-        justify-self: center;
-        height: 70%;
-            i {
-                    font-size: 1.5rem;
-                }
-    }
+  }
 }

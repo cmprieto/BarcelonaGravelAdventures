@@ -1,48 +1,50 @@
 /*TABLET*/
 
 @media only screen and (min-width: 501px) and (max-width: 960px) {
-
-    /*HOME*/
-    .sectionHome {
-        width: 100%;
-        >h2 {
-                font-size: 1rem;
-                font-weight: 550;
-            }
+  /*HOME*/
+  .sectionHome {
+    width: 100%;
+    > h2 {
+      font-size: 1rem;
+      font-weight: 550;
     }
-
-    .tarjeta {
-        flex-direction: column;
+  }
+  .fotoHome {
+    > img {
+      border-radius: 5px;
     }
+  }
+  .tarjeta {
+    flex-direction: column;
+  }
 
-    .fotoTarjeta {
-        max-width: 100%;
+  .fotoTarjeta {
+    max-width: 100%;
+  }
+
+  .parrafoTarjeta {
+    max-width: 85%;
+    padding: 0;
+  }
+
+  .titulo {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  /*PRODUCTO*/
+  .textoProducto {
+    font-size: 1.5rem;
+    width: 80%;
+    padding: 1em;
+  }
+
+  /*MENU FOOTER*/
+  .menuFooter ul {
+    flex-direction: column;
+    li {
+      font-size: 0.9rem;
+      margin: 0.8rem;
     }
-
-    .parrafoTarjeta {
-        max-width: 85%;
-        padding: 0;
-    }
-
-    .titulo {
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-    }
-
-    /*PRODUCTO*/
-    .textoProducto {
-        font-size: 1.5rem;
-        width: 80%;
-        padding: 1em;
-    }
-
-    /*MENU FOOTER*/
-    .menuFooter ul {
-        flex-direction: column;
-            li {
-                    font-size: 0.9rem;
-                    margin: 0.8rem;
-                }
-    }
-
+  }
 }

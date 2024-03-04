@@ -40,6 +40,7 @@
     transform: scale(1);
     background-color: #f2dd6e;
     color: black;
+    text-shadow: 0px 1px 0px #f5e8a8;
     font-weight: bold;
   }
 }
@@ -82,28 +83,25 @@
   grid-area: header;
   grid-column: 1/3;
   grid-row: 1/2;
+  box-shadow: inset 9px 9px 9px 9px #f5e8a8;
 }
 
 .cabeceraContenedor a img {
   height: none;
-  width: 14rem;
-}
-
-.cabecera {
-  font-weight: bolder;
-}
-.cabecera li a {
-  color: #040d12;
-  font-weight: lighter;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-.cabecera li a:hover {
-  font-weight: bold;
+  width: 13rem;
 }
 
 .logoweb {
   filter: drop-shadow(0px 5px 15px #f4f7f5);
+}
+
+.cabeceraMenu li a {
+  color: #040d12;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.cabeceraMenu li a:hover {
+  font-weight: bold;
 }
 
 /*HOME*/
@@ -119,7 +117,7 @@
   font-size: 2rem;
   margin-bottom: 2rem;
   animation-name: tracking-in-expand;
-  animation-duration: 0.5s;
+  animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   animation-direction: both;
 }
@@ -163,14 +161,15 @@
 
 .boton {
   background-color: #016fb9;
+  text-shadow: 0px 1px 0px #8bbcdc;
   color: white;
-  box-shadow: 10px 10px 72px 1px rgba(140, 140, 140, 0.75);
+  box-shadow: 10px 10px 72px 1px rgba(140, 140, 140, 0.7490196078);
 }
 .boton:hover {
   animation-name: botonhome;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -194,6 +193,8 @@
   max-width: 600px;
   text-align: justify;
   line-height: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 10px rgba(204, 199, 193, 0.3019607843);
 }
 
 .fotoTarjeta {
@@ -339,6 +340,9 @@
     font-size: 1rem;
     font-weight: 550;
   }
+  .fotoHome > img {
+    border-radius: 5px;
+  }
   .tarjeta {
     flex-direction: column;
   }
@@ -370,6 +374,10 @@
 }
 /*MOVIL*/
 @media only screen and (max-width: 500px) {
+  .cabeceraContenedor a img {
+    height: none;
+    width: 11rem;
+  }
   /*HOME*/
   .sectionHome {
     width: 100%;
@@ -377,6 +385,9 @@
   .sectionHome > h2 {
     font-size: 0.8rem;
     font-weight: 600;
+  }
+  .fotoHome > img {
+    border-radius: 2px;
   }
   .tarjeta {
     flex-direction: column;
@@ -398,7 +409,6 @@
   .imagenGrid {
     width: 90%;
     margin: 5px;
-    border: 1px solid black;
     border-radius: 5px;
     background-color: white;
   }
