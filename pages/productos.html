@@ -4,10 +4,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barcelona Gravel Adventures</title>
+  <title>Bicicletas | Bicicletas Gravel</title>
+  <!--Meta description-->
+  <meta name="description"
+    content="Descubre toda nuestra gama de Bicicletas de Gravel exclusivas. Las mejores marcas. Ven a vernos.">
+  <!--Meta keywords-->
+  <meta name="keywords" content="bicicletas, gravel, specialized, pinarello, orbea">
+  <!--OpenGraph-->
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://cmprieto.github.io/BarcelonaGravelAdventures/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bicicletas | Bicicletas Gravel">
+  <meta property="og:description"
+    content="Descubre toda nuestra gama de Bicicletas de Gravel exclusivas. Las mejores marcas. Ven a vernos.">
+  <meta property="og:image"
+    content="https://opengraph.b-cdn.net/production/documents/3fcbc92d-db19-4e4b-93e6-b3c810e7a685.png?token=uCVZOZdGEFR4xvx5LFUfxjXizRjOtm1IWdT1jXu7eRc&height=800&width=1200&expires=33246685204">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="cmprieto.github.io">
+  <meta property="twitter:url" content="https://cmprieto.github.io/BarcelonaGravelAdventures/">
+  <meta name="twitter:title" content="Bicicletas | Bicicletas Gravel">
+  <meta name="twitter:description"
+    content="Descubre toda nuestra gama de Bicicletas de Gravel exclusivas. Las mejores marcas. Ven a vernos.">
+  <meta name="twitter:image"
+    content="https://opengraph.b-cdn.net/production/documents/3fcbc92d-db19-4e4b-93e6-b3c810e7a685.png?token=uCVZOZdGEFR4xvx5LFUfxjXizRjOtm1IWdT1jXu7eRc&height=800&width=1200&expires=33246685204">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
 
   <!--Bootstrap-->
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -25,16 +51,16 @@
   <div class="grid-container">
     <header class="header">
       <!-- NAV de BOOTSTRAP-->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid cabeceraContenedor">
-          <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo web"
-              class="logoweb" /></a>
+      <nav class="navbar navbar-expand-lg header--navbar">
+        <div class="container-fluid header--navbar--contenedor">
+          <a class="navbar-brand header-navbar--contenedor--logo" href="../index.html"><img src="../assets/logo.png"
+              alt="logotipo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse menu" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 cabeceraMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 listaMenu">
               <li class="nav-item">
                 <a class="nav-link " href="../index.html">Home</a>
               </li>
@@ -59,6 +85,17 @@
     </header>
 
     <main class="contenido-principal">
+      <!-- Breadcrumb -->
+      <div class="contenedor--breadcrumb">
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+          aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Productos</li>
+          </ol>
+        </nav>
+      </div>
       <h1 class="titulo">NUESTRAS BICICLETAS</h1>
       <section>
         <div class="bicicletas">
@@ -112,8 +149,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

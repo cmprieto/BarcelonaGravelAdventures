@@ -1,10 +1,10 @@
 /*CARDS*/
 
-.tarjeta {
+.servicio--tarjeta {
+  margin: 1rem auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  justify-content: space-around;
+  max-width: 1400px;
   &:hover {
     animation-name: cmBg;
     animation-iteration-count: 1;
@@ -12,21 +12,32 @@
     animation-duration: 500ms;
     animation-fill-mode: forwards;
   }
-}
+  &--foto {
+    margin: 1em;
+    max-width: 50%;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &--texto {
+    @include boxBorder(1rem, none);
+    background-color: $color-background;
+    text-align: justify;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-.parrafoTarjeta {
-  @include boxBorder(1em, 20px);
-  max-width: 600px;
-  text-align: justify;
-  line-height: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0px 0px 20px 10px #ccc7c14d;
-}
-
-.fotoTarjeta {
-  margin: 1em;
-  max-width: 45%;
-  &:hover {
-    opacity: 0.8;
+    &--titulo {
+      border-bottom: 2px solid black;
+    }
+    &--parrafo {
+      border-left: 2px solid black;
+      padding: 0.8rem;
+      margin: 0;
+      & > p {
+        margin-bottom: 0;
+      }
+    }
   }
 }

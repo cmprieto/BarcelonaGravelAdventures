@@ -4,37 +4,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barcelona Gravel Adventures</title>
+  <title>Contacto | Bicicletas Gravel</title>
+  <!--Meta description-->
+  <meta name="description" content="Ven a visitarnos o ponte en contacto con nosotros a través de nuestro formulario.">
+  <!--Meta keywords-->
+  <meta name="keywords" content="ubicacion, tienda, donde estamos, gravel, ciclismo">
+  <!--OpenGraph-->
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://cmprieto.github.io/BarcelonaGravelAdventures/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto | Bicicletas Gravel">
+  <meta property="og:description"
+    content="Ven a visitarnos o ponte en contacto con nosotros a través de nuestro formulario.">
+  <meta property="og:image"
+    content="https://opengraph.b-cdn.net/production/documents/03ba5394-f96a-49d4-a1fb-65d38769ac58.png?token=UpaSnmOTL-lTe-5vf-rOXgr4WtHYQelgxMiuD3QrIhk&height=801&width=1200&expires=33246684986">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="cmprieto.github.io">
+  <meta property="twitter:url" content="https://cmprieto.github.io/BarcelonaGravelAdventures/">
+  <meta name="twitter:title" content="Contacto | Bicicletas Gravel">
+  <meta name="twitter:description"
+    content="Ven a visitarnos o ponte en contacto con nosotros a través de nuestro formulario.">
+  <meta name="twitter:image"
+    content="https://opengraph.b-cdn.net/production/documents/03ba5394-f96a-49d4-a1fb-65d38769ac58.png?token=UpaSnmOTL-lTe-5vf-rOXgr4WtHYQelgxMiuD3QrIhk&height=801&width=1200&expires=33246684986">
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
   <!--Bootstrap-->
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
   <!-- iconos rrss footer-->
   <script src="https://kit.fontawesome.com/aae8bf3085.js" crossorigin="anonymous"></script>
-
   <!--  importar animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!--  importar CSS -->
   <link rel="stylesheet" href="../css/main.css" />
-
 </head>
 
 <body>
   <div class="grid-container">
     <header class="header">
       <!-- NAV de BOOTSTRAP-->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid cabeceraContenedor">
-          <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo web"
-              class="logoweb" /></a>
+      <nav class="navbar navbar-expand-lg header--navbar">
+        <div class="container-fluid header--navbar--contenedor">
+          <a class="navbar-brand header-navbar--contenedor--logo" href="../index.html"><img src="../assets/logo.png"
+              alt="logotipo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse menu" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 cabeceraMenu">
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 listaMenu">
               <li class="nav-item">
                 <a class="nav-link " href="../index.html">Home</a>
               </li>
@@ -55,18 +75,25 @@
           </div>
         </div>
       </nav>
-
     </header>
-
     <main class="contenido-principal">
-
-      <section class="container animate__animated animate__pulse">
+      <!-- Breadcrumb -->
+      <div class="contenedor--breadcrumb">
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+          aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+          </ol>
+        </nav>
+      </div>
+      <section class="container contact animate__animated animate__pulse">
         <form class="form-floating">
           <div class="form-floating col-auto mb-3">
             <input type="name" class="form-control form-carlos" id="floatingName" placeholder="nombre">
             <label for="floatingName">tu nombre</label>
           </div>
-
           <div class="form-floating col-auto mb-3">
             <input type="email" class="form-control form-carlos" id="floatingMail" placeholder="nombre@mail.com"
               value="nombre@mail.com">
@@ -76,34 +103,33 @@
             <input type="tel" class="form-control form-carlos" id="floatingPhone" placeholder="phone">
             <label for="floatingPhone">teléfono</label>
           </div>
-
           <div class="form-floating col-auto mb-3">
             <textarea class="form-control form-carlos" placeholder="Leave a comment here" id="floatingTextarea"
               style="height: 200px;"></textarea>
             <label for="floatingTextarea">escribe tu mensaje...</label>
           </div>
-
           <button type="submit" class="btn boton">enviar</button>
         </form>
       </section>
-
-      <section class="tarjeta">
-        <img src="../assets/mapa.png" alt="mapa" class="fotoTarjeta" />
-        <article class="parrafoTarjeta">
-          <p>¡Embárcate en la aventura del ciclismo de gravel con nosotros!
-            Descubre la libertad, conquista nuevos caminos. </p>
-          <p>Completa nuestro
-            formulario de contacto y haz realidad tu próxima gran travesía sobre
-            dos ruedas.</p>
-          <p>¡Estamos ansiosos por ser parte de tu emocionante historia
-            ciclista!</p>
-          <p><b>Nos encontrarás en nuestra tienda en el centro de Barcelona, en
-              la calle Consell de Cent 323.
-            </b></p>
+      <section class="servicio--tarjeta">
+        <img src="../assets/mapa.png" alt="mapa" class="servicio--tarjeta--foto" />
+        <article class="servicio--tarjeta--texto">
+          <h2 class="servicio--tarjeta--texto--titulo">Donde estamos</h2>
+          <div class="servicio--tarjeta--texto--parrafo">
+            <p>
+              ¡Embárcate en la aventura del ciclismo de gravel con nosotros!
+              Descubre la libertad, conquista nuevos caminos. </p>
+            <p>Completa nuestro
+              formulario de contacto y haz realidad tu próxima gran travesía sobre
+              dos ruedas.</p>
+            <p>¡Estamos ansiosos por ser parte de tu emocionante historia
+              ciclista!</p>
+            <p><b>Nos encontrarás en nuestra tienda en el centro de Barcelona, en
+                la calle Consell de Cent 323.
+              </b></p>
+          </div>
         </article>
       </section>
-
-
     </main>
     <footer class="footer">
       <nav class="menuFooter">
@@ -122,7 +148,6 @@
       </div>
     </footer>
   </div>
-
   <!--BS SCRIPT-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

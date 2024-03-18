@@ -1,24 +1,21 @@
 //reset
-@import './reset/vars';
-@import './reset/mixin';
-@import './reset/reset';
-@import './reset/animations';
+@import "./reset/vars";
+@import "./reset/mixin";
+@import "./reset/reset";
+@import "./reset/animations";
 
 //css grid
-@import './reset/layout';
+@import "./reset/layout";
 
 //estructura
 
-
-@import 'header';
-@import 'principal';
-@import 'cards';
-@import 'productos';
-@import 'forms';
-@import 'footer';
-
-
+@import "header";
+@import "principal";
+@import "cards";
+@import "productos";
+@import "forms";
+@import "footer";
 
 //media queries
-@import 'mq_tablet';
-@import 'mq_movil';
+@import "mq_tablet";
+@import "mq_movil";

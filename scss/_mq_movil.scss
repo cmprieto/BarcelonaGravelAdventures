@@ -1,5 +1,4 @@
 /*MOVIL*/
-
 @media only screen and (max-width: 500px) {
   .cabeceraContenedor {
     a {
@@ -8,57 +7,74 @@
       }
     }
   }
-
+  /*RESET*/
+  * {
+    font-size: 14px;
+  }
   /*HOME*/
   .sectionHome {
     width: 100%;
-    > h2 {
-      font-size: 0.8rem;
+    &--texto > h2 {
+      font-size: 0.7rem;
       font-weight: 600;
+    }
+    & > p {
+      font-size: 0.8rem;
     }
   }
   .fotoHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     > img {
       border-radius: 2px;
+      height: 200px;
     }
   }
-
-  .tarjeta {
+  .contenedor--breadcrumb {
+    margin-left: 5px;
+    font-size: 0.8rem;
+  }
+  .servicio--tarjeta {
     flex-direction: column;
-  }
-
-  .fotoTarjeta {
-    max-width: 100%;
-  }
-
-  .parrafoTarjeta {
-    max-width: 90%;
-    padding: 0;
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 600;
+    &--foto {
+      max-width: 100%;
+    }
+    &--texto {
+      &--titulo {
+        padding: 1rem;
+      }
+      &--parrafo {
+        max-width: 90%;
+        box-shadow: none;
+        padding-left: 1rem;
+      }
     }
   }
-
   .bicicletas {
     flex-direction: column;
   }
-
   .imagenGrid {
     width: 90%;
     margin: 5px;
     border-radius: 5px;
     background-color: white;
   }
-
   .titulo {
-    font-size: 1.6rem;
+    top: 0px;
+    font-size: 1.3rem;
+    position: relative;
+    color: $color-globaltext;
   }
 
   /*PRODUCTO*/
   .textoProducto {
     width: 100%;
     padding: 1em;
+  }
+  /*FORMULARIO CONTACTO*/
+  .contact {
+    max-width: 90%;
   }
 
   /* FOOTER*/
@@ -69,7 +85,6 @@
       margin: 0.8rem;
     }
   }
-
   .rrss {
     flex-direction: column;
     justify-self: center;

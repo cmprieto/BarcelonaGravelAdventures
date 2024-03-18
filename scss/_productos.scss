@@ -9,9 +9,7 @@
 
 .imagenGrid {
   width: 25%;
-  margin: 10px;
-  /* border: 1px solid black; */
-  padding: 0.5rem;
+  @include boxBorder(10px, 0.5rem);
   border-radius: 10px;
   background-color: white;
   animation-name: bicis;
@@ -25,9 +23,6 @@
     animation-timing-function: ease-in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    /* 
-    opacity: 0.7;
-    transform: scale(1.1); */
   }
 }
 
@@ -36,7 +31,6 @@
   text-align: justify;
   width: 60%;
   margin: 2em auto;
-  /* text-align: justify; */
   h2 {
     text-align: center;
     margin-bottom: 2rem;

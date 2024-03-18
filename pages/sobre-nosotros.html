@@ -4,7 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barcelona Gravel Adventures</title>
+  <title>Quienes somos | Bicicletas Gravel</title>
+  <!--Meta description-->
+  <meta name="description" content="Porqué queremos juntar pasión y profesionalismo. Creando comunidad.">
+  <!--Meta keywords-->
+  <meta name="keywords" content="tienda, pasión, profesionalismo, biciletas, ciclismo, gravel, Barcelona">
+  <!--OpenGraph-->
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://cmprieto.github.io/BarcelonaGravelAdventures/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quienes somos | Bicicletas Gravel">
+  <meta property="og:description" content="Porqué queremos juntar pasión y profesionalismo. Creando comunidad.">
+  <meta property="og:image"
+    content="https://opengraph.b-cdn.net/production/documents/974df6d3-06df-462b-b721-678fca51107a.png?token=zKmoqoS3O2OgG3AXkGjt5msvWPiMPUzg_w27O8YS6Co&height=675&width=1200&expires=33246685367">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="cmprieto.github.io">
+  <meta property="twitter:url" content="https://cmprieto.github.io/BarcelonaGravelAdventures/">
+  <meta name="twitter:title" content="Quienes somos | Bicicletas Gravel">
+  <meta name="twitter:description" content="Porqué queremos juntar pasión y profesionalismo. Creando comunidad.">
+  <meta name="twitter:image"
+    content="https://opengraph.b-cdn.net/production/documents/974df6d3-06df-462b-b721-678fca51107a.png?token=zKmoqoS3O2OgG3AXkGjt5msvWPiMPUzg_w27O8YS6Co&height=675&width=1200&expires=33246685367">
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -18,16 +41,16 @@
   <div class="grid-container">
     <header class="header">
       <!-- NAV de BOOTSTRAP-->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid cabeceraContenedor">
-          <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo web"
-              class="logoweb" /></a>
+      <nav class="navbar navbar-expand-lg header--navbar">
+        <div class="container-fluid header--navbar--contenedor">
+          <a class="navbar-brand header-navbar--contenedor--logo" href="../index.html"><img src="../assets/logo.png"
+              alt="logotipo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse menu" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 cabeceraMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 listaMenu">
               <li class="nav-item">
                 <a class="nav-link " href="../index.html">Home</a>
               </li>
@@ -47,26 +70,32 @@
           </div>
         </div>
       </nav>
-
     </header>
     <main class="contenido-principal">
+      <!-- Breadcrumb -->
+      <div class="contenedor--breadcrumb">
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+          aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sobre Nosotros</li>
+          </ol>
+        </nav>
+      </div>
       <h1 class="titulo">SOBRE NOSOTROS</h1>
-      <section class="tarjeta">
-        <img src="../assets/grupo.png" alt="fotogrupo" class="fotoTarjeta" />
-        <hr>
-        <article class="parrafoTarjeta">
-          <h4>Barcelona Gravel Adventures</h4>
-          <p>Desde hace cinco años, nos
-            enorgullece ser el epicentro del ciclismo de gravel en Barcelona.
+      <section class="servicio--tarjeta">
+        <img src="../assets/grupo.png" alt="fotogrupo" class="servicio--tarjeta--foto" />
+        <article class="servicio--tarjeta--texto">
+          <h4 class="servicio--tarjeta--texto--titulo">Barcelona Gravel Adventures</h4>
+          <p class="servicio--tarjeta--texto--parrafo">
+            Desde hace cinco años, nos enorgullece ser el epicentro del ciclismo de gravel en Barcelona.
             Nuestra pasión se refleja en la fusión única de ofrecer las mejores
             bicicletas de gravel y organizar emocionantes salidas de fin de
-            semana.</p>
-          <p> En Barcelona Gravel Adventures, no solo vendemos bicicletas,
-            creamos experiencias que inspiran a los amantes del gravel a explorar
-            Barcelona y sus alrededores de una manera única.</p>
-          <p> ¡Acompáñanos en esta
-            aventura, donde la comunidad y la pasión por el ciclismo se
-            encuentran!
+            semana.
+            Creamos experiencias que inspiran a los amantes del gravel a explorar
+            Barcelona y sus alrededores de una manera única.
+            ¡Acompáñanos en esta aventura!
           </p>
         </article>
       </section>
@@ -95,7 +124,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
