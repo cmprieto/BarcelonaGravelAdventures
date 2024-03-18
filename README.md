@@ -13,9 +13,13 @@ Queremos ser un grupo de amigos con los que compartir salidas por los alrededore
 
 - HTML: Utilizado para la estructura y contenido de las páginas web.
 - CSS: Utilizado para el diseño y estilo de la web.
+- BEM: metodología de nomenclatura y estructura de código CSS. Ayuda a reutilizar estilos, facilita el mantenimiento y hace que los estilos sean más escalables en proyectos web.
 - Bootstrap. Para el estilizado de algunos componentes.
 - SASS: Preprocesador CSS utilizado para mejorar la eficiencia en la escritura de estilos CSS.
 - Animaciones: Librerías destinadas a facilitar la creación de las animaciones. Hemos usado _AOS CSS y Animate CSS_.
+- Breadcrumb, para posicionar al usuario fácilmente dentro de la web, aunque su uso tiene más sentido en webs con más categorías y subcategorías.
+- OpenGraph. Configuración de las vistas previas de los enlaces de la web en rrss.
+- SEO on-page. Configuración de SEO en HTML5. Personalizando los títulos, descipciones y keywords de cada página.
 
 ## Estructura de archivos
 
