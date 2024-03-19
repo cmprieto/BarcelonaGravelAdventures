@@ -138,10 +138,11 @@
 .titulo--home {
   position: absolute;
   color: white;
+  font-weight: 600;
   top: 30px;
 }
 
-.fotoHome {
+.imagen--home {
   text-align: center;
   height: auto;
   width: 100%;
@@ -150,7 +151,7 @@
   align-items: center;
   position: relative;
 }
-.fotoHome > img {
+.imagen--home > img {
   min-width: 100vw;
   border-radius: 15px;
 }
@@ -175,22 +176,26 @@
   text-align: center;
   text-transform: uppercase;
 }
-.sectionHome > p {
+.sectionHome > h3 {
+  font-size: 1rem;
   margin: 1rem;
+  font-weight: 600;
+}
+.sectionHome > p {
+  margin: 0 1rem 1rem 1rem;
   text-align: justify;
 }
-
-.buttonHome {
+.sectionHome--boton {
   text-align: center;
 }
-
-.boton {
+.sectionHome--boton--texto {
   background-color: #016fb9;
-  text-shadow: 0px 1px 0px #8bbcdc;
   color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
   box-shadow: 10px 10px 72px 1px rgba(140, 140, 140, 0.7490196078);
 }
-.boton:hover {
+.sectionHome--boton--texto:hover {
   animation-name: botonhome;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
@@ -205,19 +210,13 @@
   justify-content: space-around;
   max-width: 1400px;
 }
-.servicio--tarjeta:hover {
-  animation-name: cmBg;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-}
 .servicio--tarjeta--foto {
   margin: 1em;
   max-width: 50%;
 }
 .servicio--tarjeta--foto:hover {
   opacity: 0.8;
+  border: 2px solid black;
 }
 .servicio--tarjeta--texto {
   margin: 1rem;
@@ -234,8 +233,8 @@
 }
 .servicio--tarjeta--texto--parrafo {
   border-left: 2px solid black;
-  padding: 0.8rem;
   margin: 0;
+  padding: 0.7rem;
 }
 .servicio--tarjeta--texto--parrafo > p {
   margin-bottom: 0;
@@ -269,15 +268,35 @@
   animation-fill-mode: forwards;
 }
 
-.textoProducto {
-  font-size: 1.5em;
-  text-align: justify;
-  width: 60%;
+.producto {
   margin: 2em auto;
+  width: 60%;
 }
-.textoProducto h2 {
+.producto--logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+}
+.producto--logo > img {
+  max-width: 10%;
+}
+.producto > h2 {
   text-align: center;
   margin-bottom: 2rem;
+}
+.producto > p {
+  text-align: justify;
+}
+.producto--foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+}
+.producto--foto > img {
+  max-width: 50%;
 }
 
 /*Formulario Bootstrap personalizado*/
@@ -382,12 +401,12 @@
   .sectionHome > p {
     font-size: 0.9rem;
   }
-  .fotoHome {
+  .imagen--home {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .fotoHome > img {
+  .imagen--home > img {
     border-radius: 5px;
     width: 100%;
   }
@@ -418,10 +437,16 @@
     top: 0px;
   }
   /*PRODUCTO*/
-  .textoProducto {
-    font-size: 1.5rem;
+  .producto {
+    margin: 1em auto;
     width: 80%;
     padding: 1em;
+  }
+  .producto--logo > img {
+    max-width: 20%;
+  }
+  .producto--foto > img {
+    max-width: 70%;
   }
   /*FORMULARIO*/
   .contact {
@@ -451,18 +476,18 @@
     width: 100%;
   }
   .sectionHome--texto > h2 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
   .sectionHome > p {
     font-size: 0.8rem;
   }
-  .fotoHome {
+  .imagen--home {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .fotoHome > img {
+  .imagen--home > img {
     border-radius: 2px;
     height: 200px;
   }
@@ -500,9 +525,16 @@
     color: #333333;
   }
   /*PRODUCTO*/
-  .textoProducto {
+  .producto {
     width: 100%;
     padding: 1em;
+    margin: 1em auto;
+  }
+  .producto--logo > img {
+    max-width: 20%;
+  }
+  .producto--foto > img {
+    max-width: 100%;
   }
   /*FORMULARIO CONTACTO*/
   .contact {

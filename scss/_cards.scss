@@ -5,18 +5,12 @@
   display: flex;
   justify-content: space-around;
   max-width: 1400px;
-  &:hover {
-    animation-name: cmBg;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-  }
   &--foto {
     margin: 1em;
     max-width: 50%;
     &:hover {
       opacity: 0.8;
+      border: 2px solid black;
     }
   }
   &--texto {
@@ -33,8 +27,7 @@
     }
     &--parrafo {
       border-left: 2px solid black;
-      padding: 0.8rem;
-      margin: 0;
+      @include boxBorder(0, 0.7rem);
       & > p {
         margin-bottom: 0;
       }

@@ -15,14 +15,14 @@
   .sectionHome {
     width: 100%;
     &--texto > h2 {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       font-weight: 600;
     }
     & > p {
       font-size: 0.8rem;
     }
   }
-  .fotoHome {
+  .imagen--home {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,9 +68,20 @@
   }
 
   /*PRODUCTO*/
-  .textoProducto {
+  .producto {
     width: 100%;
     padding: 1em;
+    margin: 1em auto;
+    &--logo {
+      & > img {
+        max-width: 20%;
+      }
+    }
+    &--foto {
+      & > img {
+        max-width: 100%;
+      }
+    }
   }
   /*FORMULARIO CONTACTO*/
   .contact {
